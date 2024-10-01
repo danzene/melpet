@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Timmana&display=swap');
+
+:root {
+    --clr-primary: rgb(180, 90, 211);
+    --clr-secondary: rgb(43, 187, 170);
+    --clr-terciary: rgb(20, 1, 27);
+}
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #fff;
+}
+header {
+    margin-top: 80px;
+}
+.titulo{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.6);
+}
+.btn-all {
+    background-color: var(--clr-primary);
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    /* font-family: "Montserrat", sans-serif; */
+    font-size: 1rem !important;
+    font-weight: 600;
+    transition: 300ms all;
+}
+.btn-all:hover {
+    background-color: hsl(from var(--clr-primary) h 100% 70% / 1);
+    color: white;
+    transform: translate(5px, 5px);
+    box-shadow: -4px -4px 2px rgba(0, 0, 0, 0.6);
+}
+.anchor {
+    margin-top: -80px;
+}
+.text-center {
+    text-align: center;
+}
+.containerF {
+    max-width: 1536px;
+    height: 100%;
+    margin: 0 auto;
+}
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: var(--clr-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 2rem;
+    margin-top: 50p;
+     
+}
+.barra {
+    width: 100%;
+    max-width: 1536px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logoBarra img {
+    max-width: 65px;
+    height: 100%;
+}
+
+
+
+
+/*ESCRITAS (INICIO , AGENDAMENTO , SOBRE*/
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    /* margin-right: 300px; */
+    align-items: center;
+}
+ul li {
+    display: inline-block;
+    margin-right: 100px;
+    margin-top: 10px
+}
+ul li a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: white;
+    transition: 300ms all;
+    font-weight: bold;
+}
+ul li a:hover {
+    font-size: 1.7em;
+}
+
+/* Estilo adicional para esconder o menu quando em telas pequenas */
+.navbar-nav {
+    flex-direction: row;
+}
+
+@media (max-width: 992px) {
+    ul li a{
+        margin-right: 10px;
+        margin-top: 0;
+        text-align: center;
+        font-size: 15px;
+       
+      
+    }
+
+   ul li {
+        margin-right: 0;
+        margin-top: 0;
+        text-align: center;
+        
+
+    }
+    ul li a:hover {
+        font-size:20px ;
+    }
+
+    ul {
+        flex-direction:row;
+      
+    }
+
+    .navbar-nav {
+        flex-direction:row ;
+        width: 100%;
+    }
+
+    .navbar-collapse {
+        text-align: center;
+    }
+
+    .navbar-toggler {
+        border: none;
+        color: white;
+    }
+    
+    .btn-inicio {
+        display: none;
+    }
+    .btn-inicio:hover {
+       display: none;
+    }
+
+}
+
+
+
+.btn-inicio {
+    background-color: var(--clr-terciary);
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem !important;
+    font-weight: 600;
+    transition: 300ms all;
+}
+.btn-inicio:hover {
+    background-color: hsl(from var(--clr-secondary) h 100% 70% / 1);
+    color: white;
+    transform: translate(5px, 5px);
+    box-shadow: -4px -4px 2px rgba(0, 0, 0, 0.6);
+}
+
+.hero {
+    /* background-color: #8A3296; */
+    background: url('/imgs/cachorrofer.webp') no-repeat center;
+    background-size: cover;
+    max-height: 500px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 80px;  
+}
+.homeFilho {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1536px;
+    padding: 80px 0;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 50px;
+    
+}
+.homeFilho .wrapper {
+    max-width: 150px;
+   
+}
+.tamanhoBoxTexto {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 20px;
+    flex-direction: column;
+    font-size: 3em;
+    gap: 25px;
+    
+}
+
+.cardRight{
+  text-align: center;
+ 
+}
+
+.cardRight img{
+    width: 100px;
+
+}
+
+.imagemAbaixoTexto {
+    max-width: 100%;
+    height: 100%;
+}
+.logo {
+    text-align: center;
+    line-height: 65px;
+}
+
+.tamanhoBoxImagem {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: slideIn 700ms forwards;
+    /* Aplica a animação */
+}
+.homeFilho img {
+    max-width: 100%;
+    height: auto;
+}
+@keyframes slideIn {
+    from {
+        transform: translateX(100vw);
+        /* Começa fora da tela à direita */
+    }
+
+    to {
+        transform: translateX(0);
+        /* Termina na posição original */
+    }
+}
+
+ /*CARDS ABAIXO DO HERO*/
+
+.card-hover:hover {
+    transform: scale(1.05); /* Aumenta o card em 5% ao passar o mouse */
+    transition: 0.3s;
+}
+
+
+/*Segunda parte da  pagina sessao de serviços*/
+.servico {
+    background-color: #eeeeee;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Garante que padding e bordas sejam incluídos nas dimensões do elemento */
+}
+.servicosPai {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    overflow-x: scroll;
+}
+.servicoFilho {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.servicoFilho img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.servicoFilho img:hover {
+    transform: scale(1.1);
+}
+.servicoFilho h2 {
+    font-family: "Timmana", sans-serif;
+    margin-top: 30px;
+    color: #3C2A39;
+}
+/* Estilo geral para as boxes de texto */
+.boxTexto {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: auto;
+    max-width: 80%;
+    height: auto;
+    max-height: 80vh;
+    overflow-y: auto;
+    text-align: left;
+    z-index: 1001;
+    box-sizing: border-box;
+}
+/* Exibe a box quando o link correspondente é clicado */
+.boxTexto:target {
+    display: block;
+}
+/* Estilo do link de fechar */
+.boxTexto a {
+    margin: 20px auto;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    background-color: #2FBDAA;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 100px;
+    transition: 0.3s ease;
+    font-family: "Timmana", sans-serif;
+    margin-top: 40px;
+    padding-top: 15px;
+}
+.boxTexto a:hover {
+    background-color: #1D7267;
+}
+.boxTexto h2 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+}
+.boxTexto div {
+    text-align: left;
+    line-height: 1.5;
+    /* Aumenta o espaçamento entre as linhas para melhor legibilidade */
+    margin-bottom: 10px;
+    white-space: pre-line;
+    /* Mantém as quebras de linha conforme estão no HTML */
+    font-size: 1em;
+    color: #fff;
+    font-family: "Timmana", sans-serif;
+}
+
+
+/*foooter style*/
+
+.bg-gray {
+    background-color: #727070; /* Cinza claro */
+}
